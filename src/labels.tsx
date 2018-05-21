@@ -17,7 +17,7 @@ setAnalyticsOptions({
 })
 setDirection('ltr')
 
-export const graphqlAudience = Audience.enus
+export const graphqlAudience = Audience.vi
 
 moment.locale('vi')
 
