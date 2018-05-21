@@ -8,9 +8,9 @@ import { setDirection } from '@voiceofamerica/voa-shared/helpers/textDirectionHe
 import { Audience } from 'helpers/graphql-types'
 
 setAnalyticsOptions({
-  language: 'english',
-  languageService: 'english',
-  propertyName: 'english',
+  language: 'Vietnamese',
+  languageService: 'Vietnamese Service',
+  propertyName: 'Vietnamese Mobile App',
   propertyId: 'something',
   rsidAccount: 'something',
   reportSuite: 'something',
@@ -19,121 +19,112 @@ setDirection('ltr')
 
 export const graphqlAudience = Audience.enus
 
-moment.locale('en-us')
+moment.locale('vi')
 
 export const articleLabels = {
-  updatedOn: (date: string) => `Updated on ${date}`,
-  relatedContent: 'Related stories',
+  updatedOn: (date: string) => `Cập nhật ngày ${date}`,
+  relatedContent: 'Tin liên quan',
   shareMessage: '',
-  galleryLoading: 'Gallery loading...',
+  galleryLoading: 'Đang tải...',
 }
 
 export const categorySettingsLabels = {
-  header: 'Choose Categories',
-  myCategories: 'My Categories',
-  allCategories: 'All Categories',
-  dragAndDrop: 'Drag Categories',
-  headlinesFirst: 'Headline Category is First',
+  header: 'Sắp xếp danh mục',
+  myCategories: 'Mục',
+  allCategories: 'Tất cả danh mục',
+  dragAndDrop: 'Kéo danh mục đến đây',
+  headlinesFirst: 'Tin hàng đầu nằm trên cùng',
 }
 
 export const circumventionDrawerLabels = {
   content: (
     <div>
-      Your connection is secured via a VPN.
+      VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
     </div>
   ),
 }
 
 export const editorsChoiceLabels = {
-  header: 'Editor\'s Choice',
+  header: 'Có thể bạn quan tâm',
+  empty: 'Thông tin đang được cập nhật, mời bạn quay lại sau để xem các bài do Ban Biên tập chọn.',
 }
 
 export const errorBoundaryLabels = {
-  error: 'An error occurred.',
-  retry: 'Retry',
+  error: 'Lỗi',
+  retry: 'Thử lại',
 }
 
 export const favoritesSettingsLabels = {
-  header: 'My Favorites',
-  removeAll: 'Remove All Favorites',
+  header: 'Yêu thích',
+  removeAll: 'Xoá hết',
 }
 
 export const homeLabels = {
-  headlines: 'Headlines',
-  search: 'Search',
+  headlines: 'Tin hàng đầu',
+  search: 'Tìm',
   manage: '+',
 }
 
 export const introLabels = {
-  content: 'Welcome to Voice of America!',
-  continue: 'Continue',
-}
-
-const hilight: React.CSSProperties = {
-  color: '#0162B1',
+  content: 'Ứng dụng nghe, đọc, xem tin tức của VOA.',
+  continue: 'Tiếp',
 }
 
 export const mediaPlayerLabels = {
   empty: (
     <div>
       <p>
-        This is VoA's <span style={hilight}>multimedia</span> player. When you play audio or video content, it will play here.
-      </p>
-      <p>
-        You can continue to navigate the app without stopping the <span style={hilight}>multimedia</span> by closing the drawer.
-      </p>
-      <p>
-        Use the round <span style={hilight}>multimedia</span> button at the bottom of the screen to open this screen again.
-      </p>
-      <p>
-        You can also start and stop the <span style={hilight}>multimedia</span> by pressing the button at the bottom while this screen is open.
+        Xin chọn video/audio trong danh sách bên dưới.
+        Để tiếp tục đọc các bản tin mà không làm ngưng video/audio, xin vuốt dọc màn hình để đóng trang này.
+        Mở lại trang này bằng cách vuốt lên từ nút PLAY tròn ở giữa màn hình.
+        Bắt đầu và ngưng video/audio bằng cách nhấn nút PLAY.
       </p>
     </div>
   ),
-  loading: 'Loading media...',
+  loading: 'Đang tải',
 }
 
 export const mediaSettingsLabels = {
   normalSpeed: '1x',
   halfAgainSpeed: '1.5x',
   doubleSpeed: '2x',
-  chooseSpeed: 'Media playback speed',
+  chooseSpeed: 'Tốc độ phát lại',
 }
 
 export const programsScreenLabels = {
   videos: 'Video',
   audio: 'Audio',
-  empty: 'No content',
+  empty: 'Không có nội dung',
 }
 
 export const pullToRefreshLabels = {
-  pull: 'Pull to refresh',
-  release: 'Release to refresh',
+  pull: 'Vuốt dọc màn hình để cập nhật tin tức',
+  release: 'Thả tay để cập nhật tin tức',
 }
 
 export const searchLabels = {
-  header: 'Search',
-  back: 'Back',
-  all: 'All',
-  query: 'Search',
-  empty: 'No content',
+  header: 'Tìm',
+  back: 'Trở lại',
+  all: 'Tất cả',
+  query: 'Tìm',
+  empty: 'Không có kết quả',
 }
 
 export const settingsLabels = {
-  header: 'My Settings',
-  panic: 'Reset the App',
-  sendToFriends: 'Share with friends',
-  sendFeedback: 'Send us feedback',
-  aboutVoa: 'The Voice of America (VOA) publishes accurate, balanced, and comprehensive news and information to an international audience. It started in 1942 as a radio news service for people living in closed and war-torn societies and has since grown into a multimedia news operation. VOA now reaches people on web, mobile devices and social media in more than 40 languages.',
-  feedbackEmail: 'app@voanews.com',
-  feedbackSubject: encodeURIComponent('VOA Mobile App'),
+  header: 'Cài đặt',
+  panic: 'Nút Huỷ',
+  sendToFriends: 'Chia sẻ ứng dụng này với bạn bè',
+  sendFeedback: 'Gửi ý kiến cho VOA',
+  aboutVoa: 'VOA, dịch vụ truyền thông đối ngoại chính thức của chính phủ Hoa Kỳ, phát sóng lần đầu tiên vào năm 1942 sau khi Nhật tấn công Trân Châu Cảng. Ban Việt ngữ của VOA lần đầu tiên xuất hiện vào ngày 15/6/1943, tạm ngưng hoạt động từ năm 1946 trước khi lên sóng lại từ năm 1951 và liên tục phát triển tới tận ngày nay. VOA phổ biến thông tin bằng hơn 40 ngôn ngữ, nhắm tới các quốc gia vẫn còn thiếu hệ thống thông tin độc lập.',
+  feedbackEmail: 'cbtran@voanews.com',
+  feedbackSubject: encodeURIComponent('Ý kiến về ứng dụng VOA'),
   feedbackBody: encodeURIComponent(''),
-  shareMessage: 'Check out the VOA mobile app',
+  shareMessage: '',
 }
 
 export const textSettingsLabels = {
-  textSize: 'Article font size',
-  normalSize: '1x',
-  largeSize: '1.5x',
-  hugeSize: '2x',
+  textSize: 'Chọn cỡ chữ',
+  normalSize: 'Nhỏ',
+  largeSize: 'Vừa',
+  hugeSize: 'Lớn',
 }

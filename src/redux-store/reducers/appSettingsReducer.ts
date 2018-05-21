@@ -44,44 +44,44 @@ const actors: ActorMap<AppSettings> = {
 export const INITIAL_STATE: AppSettings = {
   categories: [
     {
-      id: 594,
-      name: 'News',
+      id: 6159,
+      name: 'Việt Nam',
     },
     {
-      id: 599,
-      name: 'USA',
+      id: 6165,
+      name: 'Hoa Kỳ',
     },
     {
-      id: 4720,
-      name: 'US Politics',
+      id: 6184,
+      name: 'Biển Đông',
     },
     {
-      id: 621,
-      name: 'Silicon Valley & Technology',
+      id: 1925,
+      name: 'Châu Á',
     },
     {
-      id: 605,
-      name: 'Economy',
+      id: 6180,
+      name: 'Thế giới',
     },
     {
-      id: 607,
-      name: 'Science & Health',
+      id: 3871,
+      name: 'Blog',
     },
     {
-      id: 602,
-      name: 'Arts & Entertainment',
+      id: 6185,
+      name: 'Diễn đàn',
     },
     {
-      id: 3413,
-      name: 'Day in Photos',
+      id: 1799,
+      name: 'Kinh tế',
     },
     {
-      id: 611,
-      name: 'Europe',
+      id: 1809,
+      name: 'Khoa học',
     },
     {
-      id: 616,
-      name: 'Americas',
+      id: 1800,
+      name: 'Đời sống',
     },
   ],
   mediaPlaybackRate: 1,
