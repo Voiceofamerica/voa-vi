@@ -34,6 +34,7 @@ export const categorySettingsLabels = {
   allCategories: 'Tất cả danh mục',
   dragAndDrop: 'Kéo danh mục đến đây',
   headlinesFirst: 'Tin hàng đầu nằm trên cùng',
+  cancel: 'Hủy bỏ',
 }
 
 export const circumventionDrawerLabels = {
