@@ -52,7 +52,7 @@ export const INITIAL_STATE: AppSettings = {
       name: 'Hoa Kỳ',
     },
     {
-      id: 6184,
+      id: 2406,
       name: 'Biển Đông',
     },
     {
@@ -60,15 +60,15 @@ export const INITIAL_STATE: AppSettings = {
       name: 'Châu Á',
     },
     {
-      id: 6180,
+      id: 1788,
       name: 'Thế giới',
     },
     {
-      id: 3871,
+      id: 1779,
       name: 'Blog',
     },
     {
-      id: 6185,
+      id: 3702,
       name: 'Diễn đàn',
     },
     {
