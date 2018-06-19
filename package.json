@@ -24,27 +24,20 @@
     "build:webpack": "webpack",
     "build:cordova": "cordova build",
     "build:clean": "rimraf plugins && rimraf platforms",
-    "build:full":
-      "run-s -c cordova:prepare cordova:prepare cordova:prepare copy:assets build",
+    "build:full": "run-s -c cordova:prepare cordova:prepare cordova:prepare copy:assets build",
     "copy:assets": "run-p copy:assets:*",
-    "copy:assets:ios":
-      "rsync -rv ./assets/ios/Images.xcassets/ \"./platforms/ios/VOAVietnamese/Images.xcassets/\"",
-    "copy:assets:android":
-      "rsync -rv ./assets/android/res/ ./platforms/android/res/",
-    "build:android:clean":
-      "rimraf platforms && npm run build:webpack && cordova prepare android && npm run copy:assets:android && cordova build android",
+    "copy:assets:ios": "rsync -rv ./assets/ios/Images.xcassets/ \"./platforms/ios/VOAVietnamese/Images.xcassets/\"",
+    "copy:assets:android": "rsync -rv ./assets/android/res/ ./platforms/android/res/",
+    "build:android:clean": "rimraf platforms && npm run build:webpack && cordova prepare android && npm run copy:assets:android && cordova build android",
     "build:android": "npm run build:webpack && cordova build android",
-    "deploy:android":
-      "adb uninstall com.voanews.voavi > /dev/null 2>&1 || true && adb install platforms/android/build/outputs/apk/debug/android-debug.apk",
+    "deploy:android": "adb uninstall com.voanews.voavi > /dev/null 2>&1 || true && adb install platforms/android/build/outputs/apk/debug/android-debug.apk",
     "scss:types": "tcm -p './src/{components,containers,routes}/**/*.scss'",
     "scss:types:watch": "npm run scss:types -- -w",
     "cordova:prepare": "cordova prepare",
-    "protected:zip":
-      "cd protected && zip -e ../protected.zip ./**/*.* ./**/**/*.*",
+    "protected:zip": "cd protected && zip -e ../protected.zip ./**/*.* ./**/**/*.*",
     "protected:unzip": "unzip protected.zip",
     "protected:prepare": "cd protected && unzip ../protected.zip",
-    "gql:types":
-      "apollo-codegen generate src/**/*.graphql --schema node_modules/@voiceofamerica/voa-core-shared/introspect/schema.json --target typescript --output src/helpers/graphql-types.ts"
+    "gql:types": "apollo-codegen generate src/**/*.graphql --schema node_modules/@voiceofamerica/voa-core-shared/introspect/schema.json --target typescript --output src/helpers/graphql-types.ts"
   },
   "author": "Voice of America",
   "license": "MIT",
