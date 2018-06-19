@@ -135,7 +135,10 @@
     "webpack": "^3.8.1"
   },
   "cordova": {
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "plugins": {
       "cordova-plugin-whitelist": {},
       "cordova-plugin-splashscreen": {},
