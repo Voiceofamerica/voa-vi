@@ -26,7 +26,15 @@ export default class App extends React.Component<{}, State> {
   }
 
   componentDidMount () {
-    renderReady.then(() => {
+    renderReady
+    .then(() => {
+      if (__HOST__) {
+        return null
+      } else {
+        return deviceIsReady
+      }
+    })
+    .then(() => {
       const appState = store.getState()
       if (appState.settings.dailyNotificationOn) {
         scheduleDaily().catch(err => console.error(err))

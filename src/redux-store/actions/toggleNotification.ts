@@ -4,7 +4,7 @@ import { Action } from 'redux'
 export const type = 'TOGGLE_NOTIFICATION'
 
 interface ToggleNotificationOptions {
-  id: string
+  id: number
   on?: boolean
 }
 

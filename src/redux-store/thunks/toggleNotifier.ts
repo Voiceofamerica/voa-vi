@@ -7,7 +7,7 @@ import toggleNotification from '../actions/toggleNotification'
 import { schedule, cancel } from 'helpers/localNotifications'
 
 interface ToggleNotifierOptions {
-  id: string
+  id: number
   title?: string
   time?: Moment
   on?: boolean
