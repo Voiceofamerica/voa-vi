@@ -141,7 +141,7 @@ class YouTubePrograms extends React.Component<{}, State> {
   }
 
   private fetch = () => {
-    return fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50`)
+    fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50`)
       .then<YouTubeResponse>(res => {
         if (res.status >= 400) {
           throw res.json()
