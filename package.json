@@ -131,7 +131,8 @@
     "typescript": "^2.8.1",
     "unfetch": "^3.0.0",
     "url-loader": "^0.6.2",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "youtube-player": "^5.5.0"
   },
   "cordova": {
     "platforms": [
