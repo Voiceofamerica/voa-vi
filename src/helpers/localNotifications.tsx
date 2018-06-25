@@ -24,7 +24,7 @@ export function schedule (notification: NotificationPlugin.Notification | (Notif
   return Promise.resolve()
 }
 
-export function cancel (ids: string[]): Promise<string> {
+export function cancel (ids: number[]): Promise<string> {
   if (canUseNotifications() && cordova && cordova.plugins && cordova.plugins.notification && cordova.plugins.notification.local) {
     return new Promise((resolve) => {
       cordova.plugins.notification.local.cancel(ids, resolve)
@@ -54,7 +54,7 @@ export function requestPermission (): Promise<boolean> {
   return Promise.resolve(false)
 }
 
-export const DAILY_NOTIFICATION_ID = 'daily'
+export const DAILY_NOTIFICATION_ID = 1
 
 export async function scheduleDaily () {
   await cancelDaily()

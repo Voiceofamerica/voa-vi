@@ -50,7 +50,6 @@ module.exports = {
       'redux-store': path.join(srcDir, 'redux-store'),
       routes: path.join(srcDir, 'routes'),
       labels: path.join(srcDir, 'labels'),
-      svg: path.join(srcDir, 'svg'),
       react: path.join(__dirname, './node_modules/react'),
       static: path.join(__dirname, 'static'),
     }

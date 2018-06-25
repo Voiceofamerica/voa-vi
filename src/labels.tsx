@@ -96,6 +96,7 @@ export const programsScreenLabels = {
   videos: 'Video',
   audio: 'Audio',
   empty: 'Không có nội dung',
+  youtube: 'YouTube',
 }
 
 export const pullToRefreshLabels = {

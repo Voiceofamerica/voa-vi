@@ -96,7 +96,7 @@ declare module NotificationPlugin {
   export interface Notification {
     title: string
     text?: string | (Message[])
-    id?: string
+    id?: number
     foreground?: boolean
     sound?: string
     actions?: Action[]
@@ -112,14 +112,14 @@ interface CordovaPlugins {
       hasPermission (cb: Function, scope?: any)
       requestPermission (cb: Function, scope?: any)
       schedule (notifications: NotificationPlugin.Notification | (NotificationPlugin.Notification[]), cb: Function, scope?: any, args?: any)
-      clear (ids: string[], cb: Function, scope?: any)
+      clear (ids: number[], cb: Function, scope?: any)
       clearAll (cb: Function, scope?: any)
-      cancel (ids: string[], cb: Function, scope?: any)
+      cancel (ids: number[], cb: Function, scope?: any)
       cancelAll (cb: Function, scope?: any)
-      isPresent (id: string, cb: Function, scope?: any)
-      isScheduled (id: string, cb: Function, scope?: any)
-      isTriggered (id: string, cb: Function, scope?: any)
-      getType (id: string, cb: Function, scope?: any)
+      isPresent (id: number, cb: Function, scope?: any)
+      isScheduled (id: number, cb: Function, scope?: any)
+      isTriggered (id: number, cb: Function, scope?: any)
+      getType (id: number, cb: Function, scope?: any)
       getIds (cb: Function, scope?: any)
       getScheduledIds (cb: Function, scope?: any)
     }

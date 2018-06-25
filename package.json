@@ -63,9 +63,9 @@
     "@types/redux-persist": "^4.3.1",
     "@types/redux-thunk": "^2.1.0",
     "@types/webpack-env": "^1.13.2",
-    "@voiceofamerica/cordova-plugin-music-controls": "^3.0.5",
+    "@voiceofamerica/cordova-plugin-music-controls": "^3.0.6",
     "@voiceofamerica/voa-core-shared": "^1.55.0",
-    "@voiceofamerica/voa-shared": "^2.2.0",
+    "@voiceofamerica/voa-shared": "^2.4.2",
     "adobe-mobile-services": "^4.13.1-cor",
     "android-versions": "^1.2.1",
     "apollo-cache-inmemory": "^1.1.11",
@@ -82,7 +82,6 @@
     "cordova-ios": "^4.5.4",
     "cordova-pdf-generator": "^1.9.3",
     "cordova-plugin-add-swift-support": "^1.7.1",
-    "cordova-plugin-badge": "^0.8.7",
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-fullscreen": "^1.2.0",
     "cordova-plugin-splashscreen": "^4.0.3",
@@ -134,7 +133,8 @@
     "typescript": "^2.8.1",
     "unfetch": "^3.0.0",
     "url-loader": "^0.6.2",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "youtube-player": "^5.5.0"
   },
   "cordova": {
     "platforms": [
