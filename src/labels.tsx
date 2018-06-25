@@ -1,5 +1,8 @@
 
 import * as React from 'react'
+import { push } from 'react-router-redux'
+import store from 'redux-store'
+import toggleCircumventionDrawer from 'redux-store/actions/toggleCircumventionDrawer'
 import * as moment from 'moment'
 
 import { setAnalyticsOptions } from '@voiceofamerica/voa-shared/helpers/analyticsBindings'
@@ -38,9 +41,38 @@ export const categorySettingsLabels = {
 }
 
 export const circumventionDrawerLabels = {
-  content: (
+  enabledContent: (
     <div>
-      VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
+      <p>
+        VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
+      </p>
+      <p>
+        Using Secure VPN.
+      </p>
+      <p>
+        You can change this in
+        <a href='#' onClick={() => {
+          store.dispatch(push('/settings'))
+          store.dispatch(toggleCircumventionDrawer({ open: false }))
+        }}>Settings</a>.
+      </p>
+    </div>
+  ),
+  disabledContent: (
+    <div>
+      <p>
+        VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
+      </p>
+      <p>
+        Secure VPN is off.
+      </p>
+      <p>
+        You can change this in
+        <a href='#' onClick={() => {
+          store.dispatch(push('/settings'))
+          store.dispatch(toggleCircumventionDrawer({ open: false }))
+        }}>Settings</a>.
+      </p>
     </div>
   ),
 }
@@ -122,6 +154,11 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('Ý kiến về ứng dụng VOA'),
   feedbackBody: encodeURIComponent(''),
   shareMessage: '',
+  psiphon: 'Secure VPN',
+  psiphonOn: 'On',
+  psiphonOff: 'Off',
+  takeEffectOnRestart: 'You must restart the app for your changes to take effect.',
+  okay: 'Okay',
 }
 
 export const textSettingsLabels = {
