@@ -142,9 +142,9 @@
       "ios"
     ],
     "plugins": {
+      "adobe-mobile-services": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-splashscreen": {},
-      "adobe-mobile-services": {},
       "psiphon-cordova-plugin": {},
       "cordova-plugin-fullscreen": {},
       "ionic-plugin-keyboard": {},
