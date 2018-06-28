@@ -1,13 +1,14 @@
 
 import * as React from 'react'
 import * as YouTubePlayer from 'youtube-player'
+import 'whatwg-fetch'
 
 import Loader from '@voiceofamerica/voa-shared/components/Loader'
 import TicketList, { ListItem } from '@voiceofamerica/voa-shared/components/TicketList'
 
-import { emptyContent, programContent, ytp } from './ProgramsScreen.scss'
-
 import { errorBoundaryLabels, programsScreenLabels } from 'labels'
+
+import { emptyContent, programContent, ytp } from './ProgramsScreen.scss'
 
 interface YouTubeThumbnail {
   url: string
