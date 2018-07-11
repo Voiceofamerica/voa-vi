@@ -4,6 +4,7 @@ import { compose } from 'redux'
 import { History } from 'history'
 import { graphql, ChildProps, QueryOpts } from 'react-apollo'
 import { connect, Dispatch } from 'react-redux'
+import * as moment from 'moment'
 
 import TicketList from '@voiceofamerica/voa-shared/components/TicketList'
 import { fromVideoArticleList } from '@voiceofamerica/voa-shared/helpers/itemListHelper'
@@ -37,7 +38,7 @@ class VideoPrograms extends React.Component<Props> {
       <div className={programContent}>
         <Loader data={data}>
           <TicketList
-            items={fromVideoArticleList(data.content)}
+            items={fromVideoArticleList(data.content, d => moment(d).format('L'))}
             onItemClick={this.playVideo}
             emptyContent={this.renderEmpty()}
           />

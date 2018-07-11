@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { History } from 'history'
 import { graphql, ChildProps } from 'react-apollo'
+import * as moment from 'moment'
 
 import TicketList from '@voiceofamerica/voa-shared/components/TicketList'
 import { fromPhotoGalleryArticleList } from '@voiceofamerica/voa-shared/helpers/itemListHelper'
@@ -30,7 +31,7 @@ class GalleryPrograms extends React.Component<Props> {
       <div className={programContent}>
         <Loader data={data}>
           <TicketList
-            items={fromPhotoGalleryArticleList(data.content)}
+            items={fromPhotoGalleryArticleList(data.content, d => moment(d).format('L'))}
             onItemClick={this.goToArticle}
             emptyContent={this.renderEmpty()}
           />

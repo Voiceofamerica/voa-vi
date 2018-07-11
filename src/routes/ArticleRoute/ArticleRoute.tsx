@@ -147,7 +147,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
           }
           </div>
           <div>
-            <h3>{moment(pubDate).format('lll')}</h3>
+            <h3>{moment(pubDate).format('L')}</h3>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
 
     return (
       <div style={{ fontWeight: 'bold' }}>
-        {articleLabels.updatedOn(updated.format('lll'))}
+        {articleLabels.updatedOn(updated.format('L'))}
       </div>
     )
   }
@@ -299,7 +299,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
           {articleLabels.relatedContent}
         </span>
         <StaticTicketList
-          items={fromRelatedArticleList(article.relatedStories)}
+          items={fromRelatedArticleList(article.relatedStories, d => moment(d).format('L'))}
           onItemClick={this.goToArticle}
         />
       </div>
@@ -362,7 +362,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
     generatePDF({
       title,
       by: authorNames.join('; '),
-      pubDate: moment(pubDate).format('lll'),
+      pubDate: moment(pubDate).format('L'),
       content,
     }).catch(console.error)
   }

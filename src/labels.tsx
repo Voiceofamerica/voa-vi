@@ -99,7 +99,12 @@ export const homeLabels = {
 }
 
 export const introLabels = {
-  content: 'Ứng dụng nghe, đọc, xem tin tức của VOA.',
+  content: (
+    <div style={{ textAlign: 'center' }}>
+      <div>Ứng dụng nghe, đọc, xem</div>
+      <div>tin tức của VOA.</div>
+    </div>
+  ),
   continue: 'Tiếp',
 }
 

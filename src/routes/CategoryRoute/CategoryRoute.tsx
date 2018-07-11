@@ -3,6 +3,7 @@ import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
 import { compose } from 'redux'
 import { graphql, ChildProps, QueryOpts } from 'react-apollo'
+import * as moment from 'moment'
 
 import { fromArticleList } from '@voiceofamerica/voa-shared/helpers/itemListHelper'
 import ArticleCollection from 'containers/ArticleCollection'
@@ -75,7 +76,7 @@ class HomeRouteBase extends React.Component<Props, State> {
         <PullToRefresh data={data}>
           { this.renderSearchButton() }
           <ArticleCollection
-            items={fromArticleList(data.content)}
+            items={fromArticleList(data.content, d => moment(d).format('L'))}
           />
         </PullToRefresh>
       </div>

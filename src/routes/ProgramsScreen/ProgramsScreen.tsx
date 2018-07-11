@@ -30,7 +30,7 @@ const VIDEO_ZONES: Category[] = [
   },
   {
     id: 3405,
-    name: 'Truyền hình vệ',
+    name: 'Truyền hình vệ tinh',
   },
   {
     id: 1958,
@@ -55,10 +55,6 @@ const VIDEO_ZONES: Category[] = [
 ]
 
 const AUDIO_ZONES: Category[] = [
-  {
-    id: 0,
-    name: 'Chương trình',
-  },
   {
     id: 1952,
     name: 'Chương trình 4h30 sáng',
@@ -86,7 +82,7 @@ class ProgramsScreen extends React.Component<Props> {
   }
 
   private getZoneId = () => {
-    const { zone = 0 } = this.props.match.params
+    const { type = DEFAULT, zone = type === AUDIO ? 1952 : 0 } = this.props.match.params
     return typeof zone === 'number' ? zone : parseInt(zone, 10)
   }
 
@@ -132,11 +128,9 @@ class ProgramsScreen extends React.Component<Props> {
         <div className={type === VIDEO ? `${typeItem} ${active}` : typeItem} onClick={() => this.setProgramType(VIDEO)}>
           {programsScreenLabels.videos}
         </div>
-        {/*
         <div className={type === AUDIO ? `${typeItem} ${active}` : typeItem} onClick={() => this.setProgramType(AUDIO)}>
           {programsScreenLabels.audio}
         </div>
-        */}
       </div>
     )
   }

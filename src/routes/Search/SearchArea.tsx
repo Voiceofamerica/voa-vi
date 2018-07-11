@@ -1,6 +1,7 @@
 
 import * as React from 'react'
 import { graphql, ChildProps, QueryOpts } from 'react-apollo'
+import * as moment from 'moment'
 
 import TicketList from '@voiceofamerica/voa-shared/components/TicketList'
 import { fromArticleList } from '@voiceofamerica/voa-shared/helpers/itemListHelper'
@@ -30,7 +31,7 @@ class SearchAreaBase extends React.Component<Props> {
       <div className={searchArea}>
         <Loader data={this.props.data}>
           <TicketList
-            items={fromArticleList(data.search)}
+            items={fromArticleList(data.search, d => moment(d).format('L'))}
             onItemClick={this.goToArticle}
             emptyContent={this.renderEmpty()}
           />

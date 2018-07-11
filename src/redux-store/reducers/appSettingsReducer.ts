@@ -73,7 +73,7 @@ export const INITIAL_STATE: AppSettings = {
       name: 'Thế giới',
     },
     {
-      id: 1779,
+      id: 1778,
       name: 'Blog',
     },
     {

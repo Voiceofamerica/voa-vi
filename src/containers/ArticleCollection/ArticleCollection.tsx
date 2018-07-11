@@ -105,7 +105,7 @@ class ArticleCollection extends React.Component<Props> {
     return generatePDF({
       title,
       by: authorNames.join('; '),
-      pubDate: moment(pubDate).format('lll'),
+      pubDate: moment(pubDate).format('L'),
       content,
     })
   }
