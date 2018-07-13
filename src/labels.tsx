@@ -15,8 +15,8 @@ setAnalyticsOptions({
   languageService: 'Vietnamese Service',
   propertyName: 'Vietnamese Mobile App',
   propertyId: 'something',
-  rsidAccount: 'something',
-  reportSuite: 'something',
+  rsidAccount: 'bbgvoa.viet.streaming.app',
+  reportSuite: 'bbgvoa.viet.streaming.app',
 })
 setDirection('ltr')
 
