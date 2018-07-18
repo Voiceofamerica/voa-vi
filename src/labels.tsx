@@ -100,7 +100,7 @@ export const homeLabels = {
 
 export const introLabels = {
   content: (
-    <div style={{ textAlign: 'center' }}>
+    <div>
       <div>Ứng dụng nghe, đọc, xem</div>
       <div>tin tức của VOA.</div>
     </div>
