@@ -136,6 +136,11 @@ export const programsScreenLabels = {
   youtube: 'YouTube',
 }
 
+export const psiphonLoadingLabels = {
+  bold: 'Please be patient.',
+  text: 'This may take a few minutes while we gather the best information for you.',
+}
+
 export const pullToRefreshLabels = {
   pull: 'Vuốt dọc màn hình để cập nhật tin tức',
   release: 'Thả tay để cập nhật tin tức',
