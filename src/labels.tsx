@@ -22,7 +22,7 @@ setDirection('ltr')
 
 export const graphqlAudience = Audience.vi
 
-moment.locale('vi')
+moment.locale('en-gb')
 
 export const articleLabels = {
   updatedOn: (date: string) => `Cập nhật ngày ${date}`,
@@ -37,7 +37,7 @@ export const categorySettingsLabels = {
   allCategories: 'Tất cả danh mục',
   dragAndDrop: 'Kéo danh mục đến đây',
   headlinesFirst: 'Tin hàng đầu nằm trên cùng',
-  cancel: 'Hủy bỏ',
+  cancel: 'Hủy',
 }
 
 export const circumventionDrawerLabels = {
@@ -47,14 +47,13 @@ export const circumventionDrawerLabels = {
         VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
       </p>
       <p>
-        Using Secure VPN.
+      Sử dụng công cụ tránh kiểm duyệt Psiphon
       </p>
       <p>
-        You can change this in
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>Settings</a>.
+        }}>Bạn có thể thay đổi tính năng này trong phần Cài đặt</a>.
       </p>
     </div>
   ),
@@ -64,14 +63,13 @@ export const circumventionDrawerLabels = {
         VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
       </p>
       <p>
-        Secure VPN is off.
+      Mạng riêng ảo VPN đang tắt
       </p>
       <p>
-        You can change this in
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>Settings</a>.
+        }}>Bạn có thể thay đổi tính năng này trong phần Cài đặt</a>.
       </p>
     </div>
   ),
@@ -83,7 +81,7 @@ export const editorsChoiceLabels = {
 }
 
 export const errorBoundaryLabels = {
-  error: 'Lỗi',
+  error: 'Ứng dụng bị lỗi',
   retry: 'Thử lại',
 }
 
@@ -112,10 +110,10 @@ export const mediaPlayerLabels = {
   empty: (
     <div>
       <p>
-        Xin chọn video/audio trong danh sách bên dưới.
-        Để tiếp tục đọc các bản tin mà không làm ngưng video/audio, xin vuốt dọc màn hình để đóng trang này.
-        Mở lại trang này bằng cách vuốt lên từ nút PLAY tròn ở giữa màn hình.
-        Bắt đầu và ngưng video/audio bằng cách nhấn nút PLAY.
+      Xin chọn video/audio trong mục Multimedia.
+      Để tiếp tục đọc các bản tin trong lúc phát video/audio, xin vuốt dọc màn hình để đóng trang này.
+      Mở lại trang này bằng cách vuốt lên từ nút PLAY tròn ở giữa màn hình.
+      Bắt đầu và ngưng video/audio bằng cách nhấn nút PLAY.
       </p>
     </div>
   ),
@@ -137,8 +135,8 @@ export const programsScreenLabels = {
 }
 
 export const psiphonLoadingLabels = {
-  bold: 'Please be patient.',
-  text: 'This may take a few minutes while we gather the best information for you.',
+  bold: '',
+  text: 'Xin vui lòng chờ đợi. Ứng dụng đang cập nhật thông tin.',
 }
 
 export const pullToRefreshLabels = {
@@ -160,15 +158,15 @@ export const settingsLabels = {
   sendToFriends: 'Chia sẻ ứng dụng này với bạn bè',
   sendFeedback: 'Gửi ý kiến cho VOA',
   aboutVoa: 'VOA, dịch vụ truyền thông đối ngoại chính thức của chính phủ Hoa Kỳ, phát sóng lần đầu tiên vào năm 1942 sau khi Nhật tấn công Trân Châu Cảng. Ban Việt ngữ của VOA lần đầu tiên xuất hiện vào ngày 15/6/1943, tạm ngưng hoạt động từ năm 1946 trước khi lên sóng lại từ năm 1951 và liên tục phát triển tới tận ngày nay. VOA phổ biến thông tin bằng hơn 40 ngôn ngữ, nhắm tới các quốc gia vẫn còn thiếu hệ thống thông tin độc lập.',
-  feedbackEmail: 'cbtran@voanews.com',
+  feedbackEmail: 'voatiengvietweb@gmail.com',
   feedbackSubject: encodeURIComponent('Ý kiến về ứng dụng VOA'),
   feedbackBody: encodeURIComponent(''),
   shareMessage: '',
-  psiphon: 'Secure VPN',
-  psiphonOn: 'On',
-  psiphonOff: 'Off',
-  takeEffectOnRestart: 'You must restart the app for your changes to take effect.',
-  okay: 'Okay',
+  psiphon: 'Mạng riêng ảo VPN',
+  psiphonOn: 'Bật',
+  psiphonOff: 'Tắt',
+  takeEffectOnRestart: 'Bạn phải khởi động lại ứng dụng để các thay đổi của bạn có hiệu lực.',
+  okay: 'OK',
 }
 
 export const textSettingsLabels = {

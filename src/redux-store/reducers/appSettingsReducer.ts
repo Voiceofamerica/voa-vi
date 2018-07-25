@@ -53,11 +53,11 @@ const actors: ActorMap<AppSettings> = {
 export const INITIAL_STATE: AppSettings = {
   categories: [
     {
-      id: 6159,
+      id: 1813,
       name: 'Việt Nam',
     },
     {
-      id: 6165,
+      id: 1812,
       name: 'Hoa Kỳ',
     },
     {
@@ -73,14 +73,6 @@ export const INITIAL_STATE: AppSettings = {
       name: 'Thế giới',
     },
     {
-      id: 1778,
-      name: 'Blog',
-    },
-    {
-      id: 3702,
-      name: 'Diễn đàn',
-    },
-    {
       id: 1799,
       name: 'Kinh tế',
     },
@@ -91,6 +83,14 @@ export const INITIAL_STATE: AppSettings = {
     {
       id: 1800,
       name: 'Đời sống',
+    },
+    {
+      id: 1778,
+      name: 'Blog',
+    },
+    {
+      id: 3702,
+      name: 'Diễn đàn',
     },
   ],
   mediaPlaybackRate: 1,
