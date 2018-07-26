@@ -14,7 +14,7 @@ setAnalyticsOptions({
   language: 'Vietnamese',
   languageService: 'Vietnamese Service',
   propertyName: 'voa vietnamese news app',
-  propertyId: 'something',
+  propertyId: '342',
   rsidAccount: 'bbgvoa.viet.streaming.app',
   reportSuite: 'bbgvoa.viet.streaming.app',
 })
