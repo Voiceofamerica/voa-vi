@@ -47,7 +47,7 @@ export const circumventionDrawerLabels = {
         VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
       </p>
       <p>
-      Sử dụng công cụ tránh kiểm duyệt Psiphon
+      Proxy bảo mật được bật
       </p>
       <p>
         <a href='#' onClick={() => {
@@ -63,7 +63,7 @@ export const circumventionDrawerLabels = {
         VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
       </p>
       <p>
-      Mạng riêng ảo proxy đang tắt
+      Proxy bảo mật được tắt
       </p>
       <p>
         <a href='#' onClick={() => {
@@ -100,7 +100,7 @@ export const introLabels = {
   content: (
     <div>
       <div>Ứng dụng nghe, đọc, xem</div>
-      <div>tin tức của VOA.</div>
+      <div>tin tức của VOA</div>
     </div>
   ),
   continue: 'Tiếp',
@@ -111,9 +111,9 @@ export const mediaPlayerLabels = {
     <div>
       <p>
       Xin chọn video/audio trong mục Multimedia.
-      Để tiếp tục đọc các bản tin trong lúc phát video/audio, xin vuốt dọc màn hình để đóng trang này.
-      Mở lại trang này bằng cách vuốt lên từ nút PLAY tròn ở giữa màn hình.
-      Bắt đầu và ngưng video/audio bằng cách nhấn nút PLAY.
+      Để tiếp tục đọc các bản tin trong lúc ứng dụng đang phát video/audio, xin nhấp tay vào đầu màn hình để đóng trang video/audio.
+      Mở lại trang này bằng cách nhấp vào nút PLAY tròn ở giữa màn hình.
+      Bắt đầu hay ngưng video/audio bằng cách nhấn nút PLAY.
       </p>
     </div>
   ),
