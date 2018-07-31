@@ -63,7 +63,7 @@ export const circumventionDrawerLabels = {
         VOA sử dụng công cụ tránh kiểm duyệt Psiphon với tính năng mã hóa các dữ liệu trên ứng dụng. Kết nối của bạn với VOA được bảo mật, duy trì quyền riêng tư.
       </p>
       <p>
-      Mạng riêng ảo VPN đang tắt
+      Mạng riêng ảo proxy đang tắt
       </p>
       <p>
         <a href='#' onClick={() => {
@@ -135,8 +135,8 @@ export const programsScreenLabels = {
 }
 
 export const psiphonLoadingLabels = {
-  bold: '',
-  text: 'Xin vui lòng chờ đợi. Ứng dụng đang cập nhật thông tin.',
+  bold: 'Xin vui lòng chờ đợi.',
+  text: 'Ứng dụng đang cập nhật thông tin.',
 }
 
 export const pullToRefreshLabels = {
@@ -162,7 +162,7 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('Ý kiến về ứng dụng VOA'),
   feedbackBody: encodeURIComponent(''),
   shareMessage: '',
-  psiphon: 'Mạng riêng ảo VPN',
+  psiphon: 'Mạng riêng ảo proxy',
   psiphonOn: 'Bật',
   psiphonOff: 'Tắt',
   takeEffectOnRestart: 'Bạn phải khởi động lại ứng dụng để các thay đổi của bạn có hiệu lực.',
