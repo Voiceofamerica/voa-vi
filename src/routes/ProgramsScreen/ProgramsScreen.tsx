@@ -24,7 +24,7 @@ const DEFAULT = VIDEO
 const VIDEO_ZONES: Category[] = [
   {
     id: 0,
-    name: 'Chương trình',
+    name: 'Tất cả',
   },
   {
     id: 3405,
@@ -53,6 +53,42 @@ const VIDEO_ZONES: Category[] = [
   {
     id: 5083,
     name: 'Tin vắn châu Á',
+  },
+  {
+    id: 5089,
+    name: 'Hỏi đáp Du học Mỹ',
+  },
+  {
+    id: 5213,
+    name: 'Hỏi đáp Di trú Mỹ',
+  },
+  {
+    id: 5268,
+    name: 'Hỏi đáp Y học',
+  },
+  {
+    id: 3768,
+    name: 'Học tiếng Anh qua phim ảnh',
+  },
+  {
+    id: 4019,
+    name: 'News Words',
+  },
+  {
+    id: 4718,
+    name: 'Everyday Grammar',
+  },
+  {
+    id: 4830,
+    name: 'Let\'s Learn English',
+  },
+  {
+    id: 5389,
+    name: 'Let\'s Learn English 2',
+  },
+  {
+    id: 3635,
+    name: 'English in a Minute',
   },
 ]
 
