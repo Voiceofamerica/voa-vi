@@ -10,6 +10,8 @@ import { setDirection } from '@voiceofamerica/voa-shared/helpers/textDirectionHe
 
 import { Audience } from 'helpers/graphql-types'
 
+export const defaultAppTopic = 'vi'
+
 setAnalyticsOptions({
   language: 'Vietnamese',
   languageService: 'Vietnamese Service',
@@ -162,7 +164,7 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('Ý kiến về ứng dụng VOA'),
   feedbackBody: encodeURIComponent(''),
   shareMessage: '',
-  psiphon: 'Mạng riêng ảo proxy',
+  psiphon: 'Proxy an toàn',
   psiphonOn: 'Bật',
   psiphonOff: 'Tắt',
   takeEffectOnRestart: 'Bạn phải khởi động lại ứng dụng để các thay đổi của bạn có hiệu lực.',
