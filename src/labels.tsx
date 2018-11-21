@@ -101,7 +101,8 @@ export const homeLabels = {
 export const introLabels = {
   content: (
     <div>
-      <div>Ứng dụng nghe, đọc, xem</div>
+      <div>Ứng dụng</div>
+      <div>nghe, đọc, xem</div>
       <div>tin tức của VOA</div>
     </div>
   ),
