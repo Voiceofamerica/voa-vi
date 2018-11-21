@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="101000" id="com.voanews.voavi" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name short="VOA">VOAVietnamese</name>
+<widget android-versionCode="101001" id="com.voanews.voavi" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name short="VOA Tiếng Việt">VOAVietnamese</name>
     <description>
         The Voice of America (VOA) publishes accurate, balanced, and comprehensive news and information to an international audience.
     </description>
